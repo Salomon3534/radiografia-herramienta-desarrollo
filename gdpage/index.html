@@ -29,10 +29,20 @@
 
     <p id="msg">Hola caracola</p>
 
-    <button id="down" class="center">Descargar Godot</button>
-    <footer>
-        <p>Abel Redero Arroyo</p>
-    </footer>
+    <button id="down" class="center">Cambiar texto</button>
+
+    
+    <div class="search-container">
+        <label for="feature-search">Buscar características de Godot:</label>
+        <input
+            type="search"
+            id="feature-search"
+            placeholder="Escribe un nombre o una descripción..."
+        >
+        <p id="search-message" role="status" aria-live="polite"></p>
+    </div>
+    
+    <ul id="zalist"></ul>
 </body>
 
 </html>

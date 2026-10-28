@@ -1,31 +1,112 @@
-body {
-    font-family: "Archivo Black", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-
-    color: rgb(255, 255, 255);
-    background-color: rgb(80, 80, 80);
-
-    text-align: center;
+* {
+    box-sizing: border-box;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    color: #f5f5f5;
+    background-color: #303030;
+    text-align: center;
+    line-height: 1.6;
+}
 
 h1 {
-    color: rgb(85, 87, 218);
+    margin: 0;
+    color: #8587ff;
+    font-size: clamp(2rem, 5vw, 3.5rem);
     font-weight: bold;
+    letter-spacing: -1px;
+}
+
+h2, h3 {
+    color: #a5a6ff;
 }
 
 .banner-top {
     display: flex;
     justify-content: center;
     align-items: center;
-
-    background-color: rgb(34, 34, 34);
+    width: 100%;
+    min-height: 120px;
+    padding: 24px;
+    background-color: #202020;
+    border-bottom: 3px solid #8587ff;
 }
 
+#zalist {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+    gap: 24px;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 24px;
+    list-style: none;
+}
 
+#zalist li {
+    padding: 28px;
+    background-color: #3b3b3b;
+    border: 1px solid #505050;
+    border-radius: 14px;
+    text-align: left;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
 
-/** LA CLASE OCULTADORA **/
+#zalist li:hover {
+    transform: translateY(-5px);
+    border-color: #8587ff;
+    background-color: #424242;
+}
+
+#zalist li h3 {
+    margin-top: 0;
+    margin-bottom: 14px;
+    font-size: 1.25rem;
+    line-height: 1.4;
+}
+
+#zalist li p {
+    margin-bottom: 0;
+    color: #d0d0d0;
+    font-family: Arial, sans-serif;
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+#zalist li p strong {
+    color: #a5a6ff;
+}
+
 .h {
     display: none;
+}
+
+@media (max-width: 600px) {
+    .banner-top {
+        min-height: 90px;
+        padding: 18px;
+    }
+
+    #zalist {
+        gap: 16px;
+        margin: 24px auto;
+        padding: 0 16px;
+    }
+
+    #zalist li {
+        padding: 22px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    #zalist li {
+        transition: none;
+    }
+
+    #zalist li:hover {
+        transform: none;
+    }
 }
