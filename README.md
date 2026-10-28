@@ -1,76 +1,46 @@
+## Documentación
+
+<mark>[Abrir documento de la actividad](https://docs.google.com/document/d/1LQGRGyV7ssB8XZxy9Sq4Ny-snIPsnfWODlgmBlrv14k/edit?usp=sharing)</mark>
+
 # Godot Engine
 
-<p align="center">
-  <a href="https://godotengine.org">
-    <img src="misc/logo/logo_outlined.svg" width="400" alt="Godot Engine logo">
-  </a>
-</p>
+## Descripción
 
-## 2D and 3D cross-platform game engine
+Godot Engine es un motor de desarrollo de videojuegos gratuito y de código abierto que permite crear juegos en 2D y 3D desde una misma interfaz. Incluye herramientas como GDScript, un sistema de nodos y escenas y opciones de exportación para diferentes plataformas.
 
-**[Godot Engine](https://godotengine.org) is a feature-packed, cross-platform
-game engine to create 2D and 3D games from a unified interface.** It provides a
-comprehensive set of [common tools](https://godotengine.org/features), so that
-users can focus on making games without having to reinvent the wheel. Games can
-be exported with one click to a number of platforms, including the major desktop
-platforms (Linux, macOS, Windows), mobile platforms (Android, iOS), as well as
-Web-based platforms and [consoles](https://godotengine.org/consoles).
+## Estructura del proyecto
 
-## Free, open source and community-driven
+radiografia-herramienta-desarrollo/
+├── index.html
+├── css/
+│   └── estilos.css
+├── js/
+│   └── sc.js
+└── README.md
 
-Godot is completely free and open source under the very permissive [MIT license](https://godotengine.org/license).
-No strings attached, no royalties, nothing. The users' games are theirs, down
-to the last line of engine code. Godot's development is fully independent and
-community-driven, empowering users to help shape their engine to match their
-expectations. It is supported by the [Godot Foundation](https://godot.foundation/)
-not-for-profit.
+## Cómo ejecutar el proyecto
 
-Before being open sourced in [February 2014](https://github.com/godotengine/godot/commit/0b806ee0fc9097fa7bda7ac0109191c9c5e0a1ac),
-Godot had been developed by [Juan Linietsky](https://github.com/reduz) and
-[Ariel Manzur](https://github.com/punto-) for several years as an in-house
-engine, used to publish several work-for-hire titles.
+1. Clona el repositorio o descarga sus archivos.
+2. Abre la carpeta del proyecto en tu editor de código.
+3. Inicia un servidor local desde la carpeta raíz. Por ejemplo, con la extensión **Live Server** de Visual Studio Code.
+4. Abre la dirección local que proporciona el servidor en tu navegador.
 
-![Screenshot of a 3D scene in the Godot Engine editor](https://raw.githubusercontent.com/godotengine/godot-design/master/screenshots/editor_tps_demo_1920x1080.jpg)
+Es recomendable utilizar un servidor local para que los módulos de JavaScript se carguen correctamente.
 
-## Getting the engine
+## Funcionalidades implementadas
 
-### Binary downloads
+- **Actualización del DOM:** un botón cambia el texto de un elemento de la página mediante JavaScript.
+- **Eventos de clic:** se utilizan eventos para actualizar el contenido y registrar interacciones en la consola.
+- **Mostrar y ocultar información:** un botón permite alternar la visibilidad de una sección mediante `classList`.
+- **Tarjetas dinámicas:** las características de Godot se almacenan en un array de objetos y se generan dinámicamente en la página.
+- **Búsqueda interactiva:** un campo de búsqueda filtra las características por nombre o descripción y muestra un mensaje cuando no hay coincidencias.
 
-Official binaries for the Godot editor and the export templates can be found
-[on the Godot website](https://godotengine.org/download).
+## Tecnologías utilizadas
 
-### Compiling from source
+- HTML5
+- CSS3
+- JavaScript (módulos ES y API DOM)
 
-[See the official docs](https://docs.godotengine.org/en/latest/engine_details/development/compiling)
-for compilation instructions for every supported platform.
+## Autoría
 
-## Community and contributing
-
-Godot is not only an engine but an ever-growing community of users and engine
-developers. The main community channels are listed [on the homepage](https://godotengine.org/community).
-
-The best way to get in touch with the core engine developers is to join the
-[Godot Contributors Chat](https://chat.godotengine.org).
-
-To get started contributing to the project, see the [contributing guide](CONTRIBUTING.md).
-This document also includes guidelines for reporting bugs.
-
-## Documentation and demos
-
-The official documentation is hosted on [Read the Docs](https://docs.godotengine.org).
-It is maintained by the Godot community in its own [GitHub repository](https://github.com/godotengine/godot-docs).
-
-The [class reference](https://docs.godotengine.org/en/latest/classes/)
-is also accessible from the Godot editor.
-
-We also maintain official demos in their own [GitHub repository](https://github.com/godotengine/godot-demo-projects)
-as well as the [Asset Store](https://store.godotengine.org/).
-
-There are also a number of other
-[learning resources](https://docs.godotengine.org/en/latest/community/tutorials.html)
-provided by the community, such as text and video tutorials, demos, etc.
-Consult the [community channels](https://godotengine.org/community)
-for more information.
-
-[![Code Triagers Badge](https://www.codetriage.com/godotengine/godot/badges/users.svg)](https://www.codetriage.com/godotengine/godot)
-[![Translate on Weblate](https://hosted.weblate.org/widgets/godot-engine/-/godot/svg-badge.svg)](https://hosted.weblate.org/engage/godot-engine/?utm_source=widget)
+Proyecto realizado para la actividad **«Radiografía de una herramienta de desarrollo»**, del módulo Desarrollo Web en Entorno Cliente, 2.º DAW.
